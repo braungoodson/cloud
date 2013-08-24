@@ -1,0 +1,9 @@
+//port,express,dbConnector,restApi,serverShell
+require('./httpServer')
+	.init(
+		require('./port').init(8040),
+		require('./node_module/express'),
+		require('./dataConnector'),
+		require('./restApi'),
+		require('./serverShell')
+	);
